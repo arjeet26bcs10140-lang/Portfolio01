@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport"/>
+  <title>Portfolio</title>
+  <style>
+    body{
+      margin:30px;
+    }
+    .b{
+      margin-bottom: 50px;
+    }
+    * { 
+      margin:0; 
+      padding:0; 
+      box-sizing:border-box; 
+    }
+    body { 
+      font-family:Arial, sans-serif; 
+      line-height:1.6; 
+      color:#1c1815; 
+      background: white; 
+    }
+    h1, h2, h3 { font-family:Georgia, serif; }
+    .l { 
+      font-family: Georgia, serif; 
+      font-weight:bold; 
+    }
+    a { 
+      color: #b45309; 
+      text-decoration:none; 
+      font-weight:  500;
+    }
+    a:hover {
+      text-decoration:underline;
+    } 
+    .sk {
+      
+      color:#4a4238;
+    }
+    ul { list-style: none; }
+    
+    footer { 
+      font-size:15px; 
+      color:#6e6459; 
+      padding: 30px 25px; 
+      text-align: center; 
+      border-top:1px solid #e6dcce; 
+      
+    }
+    section { 
+      max-width: 800px; 
+      margin: 0 auto; 
+      padding:50px  25px; 
+    }
+    
+  
+    #h h1 { 
+      margin-bottom: 10px; 
+      font-size:50px; 
+    }
+    header { 
+      position: sticky; 
+      top: 0; 
+      display:flex; 
+      justify-content: space-evenly; 
+      align-items:  center; 
+      padding:20px 25px; 
+      background: #fbf8f1; 
+      border-bottom:1px solid #e6dcce; 
+      z-index:99;
+    }
+    
+    nav ul { display: flex; gap:25px; }
+    .g {
+      display: grid; 
+      grid-template-columns: repeat(2, 1fr); 
+      gap:25px; 
+      margin-bottom: 50px;
+    }
+    
+    .c { 
+      padding:20px; 
+      background: white; 
+      border: 1px solid #e6dcce; 
+      border-radius:6px; 
+    }
+    .c a {
+      display: inline-block;
+      margin-top:20px;
+    }
+    table { 
+      width: 100%; 
+      border-collapse: collapse; 
+      margin: 10px 0;
+    }
+    th, td { 
+      padding:10px; 
+      text-align: left; 
+      border-bottom: 1px solid #e6dcce; 
+    }
+    th {
+      font-family: Georgia, serif;
+      font-weight: bold;
+    }
+    form { 
+      display: flex; 
+      flex-direction: column; 
+      gap:15px; 
+      max-width: 500px; 
+    }
+    label { 
+      display: flex; 
+      flex-direction: column; 
+      gap:10px; 
+      font-size:15px;
+      font-weight: 500;
+    }
+    input, textarea, button { 
+      padding: 10px; 
+      font: inherit; 
+      border: 1px solid #cfc2ae; 
+      border-radius: 4px; 
+      width: 100%;
+      background:white;
+    }
+    button { 
+      background: #b45309; 
+      color: white; 
+      border: none; 
+      cursor: pointer; 
+      font-weight: 600; 
+      transition: background 0.2s ease;
+      width: auto;
+      padding: 10px 20px;
+    }
+    button:hover {
+      background: #92400e;
+    }
+    .v { display: block; height: 0px;}
+    .m { display: block; }
+    @media (max-width: 600px) {
+      .g { grid-template-columns: 1fr; }
+      header { flex-direction: column; gap: 15px; text-align: center; }
+      #h h1 { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="l" href="#">Arjeet Martha</a>
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <section id="h">
+      
+      <h1>Arjeet Martha</h1>
+      <p>I'm currently learning to build web apps and also interested in contributing to open-source projects.</p>
+    </section>
+      <h2>About</h2>
+      <div class="b">
+        <p>I'm a student developer who likes building small, useful software. At Scaler I learn to grow and help the society by my projects.</p>
+      </div>
+      <h2>Skills</h2>
+      <div class="g">
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+          </ul>
+          <h3>Web</h3>
+          <ul><li>HTML and CSS</li>
+          <li>React</li>
+          <li>Node.js</li>
+          </ul>
+          <h3>Tools</h3>
+          <ul>
+            <li>Linux</li><li>Git and GitHub</li>
+          </ul>
+          <h3>Hobbies</h3>
+          <ul>
+            <li>Karate</li>
+            <li>Badminton</li>
+            <li>Basketball</li>
+            <li>Reading Books</li>
+            <li>Watching Anime</li>
+          </ul>
+      </div>
+      <h2>Projects</h2>
+          
+      <div class="g">
+        <div class="c">
+          <h3>ReLearned</h3>
+          <p>Guided learning paths. Built with React and Vite.</p>
+          <a href="https://relearned.netlify.app/" target="_blank">Live site</a>
+        </div>
+        <div class="c">
+          <h3>Artify</h3>
+          <p>A web app that turns images into pixel art or ASCII art in real time, using JavaScript and HTML5 Canvas.</p>
+          <a href="https://artify-puce.vercel.app/">Live site</a>
+        </div>
+      </div>
+      <h2>Education</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>School</th>
+            <th>Program</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Scaler School of Technology</td>
+            <td>Computer Science and Engineering</td>
+            <td>Studying</td>
+          </tr>
+          <tr>
+            <td>Velammal Vidhyashram</td>
+            <td>10th and 12th</td>
+            <td>Completed</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Contact</h2>
+      <form action="mailto:arjeet.26bcs10140@sst.scaler.com">
+        <label>Name</label>
+        <input name="name" type="text" required>
+        <label>Email</label>
+        <input name="email" type="email" required>
+        <label>Message</label>
+        <textarea rows="4" ></textarea>
+        <button type="submit">Send</button>
+      </form>
+</body>
+</html>
