@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Arjeet Martha — Portfolio</title>
+  <style>
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+    }
+    body { 
+      font-family: Arial, sans-serif; 
+      line-height: 1.6; 
+      color: #1c1815; 
+      background: #fbf8f1; 
+    }
+    h1, h2, h3 { font-family: Georgia, serif; }
+    .l { 
+      font-family: Georgia, serif; 
+      font-weight: bold; 
+    }
+    a { 
+      color: #b45309; 
+      text-decoration: none; 
+      font-weight: 500;
+    }
+    a:hover {
+      text-decoration: underline;
+    } */
+    .skills-list li {
+      margin-bottom: 0.25rem;
+      color: #4a4238;
+    }
+    ul { list-style: none; }
+    p { margin-bottom: 1rem; }
+    .s { 
+      font-size: 0.85rem; 
+      color: #6e6459; 
+    }
+    footer { 
+      font-size: 0.85rem; 
+      color: #6e6459; 
+      padding: 2rem 1.5rem; 
+      text-align: center; 
+      border-top: 1px solid #e6dcce; 
+      margin-top: 2rem;
+    }
+    section { 
+      max-width: 800px; 
+      margin: 0 auto; 
+      padding: 3rem 1.5rem; 
+    }
+    h2 { 
+      margin-bottom: 1.25rem; 
+      padding-bottom: 0.5rem; 
+      border-bottom: 1px solid #e6dcce; 
+    }
+    h3 { margin-bottom: 0.5rem; }
+    #h h1 { 
+      margin-bottom: 0.5rem; 
+      font-size: 3rem; 
+    }
+    header { 
+      position: sticky; 
+      top: 0; 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      padding: 1rem 1.5rem; 
+      background: #fbf8f1; 
+      border-bottom: 1px solid #e6dcce; 
+      z-index: 99;
+    }
+    .l { font-size: 1.25rem; color: #1c1815; }
+    nav ul { display: flex; gap: 1.5rem; }
+    .g {
+      display: grid; 
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 1.5rem; 
+    }
+    .t { grid-template-columns: repeat(3, 1fr); }
+    .c { 
+      padding: 1.25rem; 
+      background: #f4ede0; 
+      border: 1px solid #e6dcce; 
+      border-radius: 6px; 
+    }
+    .c a {
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+    table { 
+      width: 100%; 
+      border-collapse: collapse; 
+      margin-top: 0.5rem; 
+    }
+    th, td { 
+      padding: 0.75rem; 
+      text-align: left; 
+      border-bottom: 1px solid #e6dcce; 
+    }
+    th {
+      font-family: Georgia, serif;
+      font-weight: bold;
+    }
+    form { 
+      display: flex; 
+      flex-direction: column; 
+      gap: 1.25rem; 
+      max-width: 500px; 
+    }
+    label { 
+      display: flex; 
+      flex-direction: column; 
+      gap: 0.35rem; 
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    input, textarea, button { 
+      padding: 0.6rem; 
+      font: inherit; 
+      border: 1px solid #cfc2ae; 
+      border-radius: 4px; 
+      width: 100%;
+      background: #fff;
+    }
+    button { 
+      background: #b45309; 
+      color: white; 
+      border: none; 
+      cursor: pointer; 
+      font-weight: 600; 
+      transition: background 0.2s ease;
+      width: auto;
+      padding: 0.6rem 2rem;
+    }
+    button:hover {
+      background: #92400e;
+    }
+    .v { display: block; height: 0px; visibility: hidden; }
+    .mainpart { display: block; }
+    @media (max-width: 600px) {
+      .g { grid-template-columns: 1fr; }
+      header { flex-direction: column; gap: 1rem; text-align: center; }
+      #h h1 { font-size: 2.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="l" href="#">Arjeet Martha</a>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="mainpart">
+    <section id="h">
+      <div class="v"></div>
+      <p class="s">Bengaluru, India, Scaler School of Technology</p>
+      <h1>Arjeet Martha</h1>
+      <p>I build web applications and developer tools. I'm studying Computer Science at Scaler School of Technology.</p>
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <div class="b">
+        <p>I'm a student developer who likes building small, useful software. At Scaler I balance computer science fundamentals with shipping real projects in Python, Node.js and React.</p>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="g">
+        <div>
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Web</h3>
+          <ul>
+            <li>HTML and CSS</li>
+            <li>React</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Tools</h3>
+          <ul>
+            <li>Linux</li>
+            <li>Git and GitHub</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Sports</h3>
+          <ul>
+            <li>Karate</li>
+            <li>Badminton</li>
+            <li>Basketball</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="g">
+        <div class="c" data-item="relearned">
+          <h3>ReLearned</h3>
+          <p>An interactive learning roadmap platform with milestones and guided learning paths. Built with React and Vite.</p>
+          <a target="_blank" href="https://netlify.app" rel="noopener">Live site</a>
+        </div>
+        <div class="c" data-item="artify">
+          <h3>Artify</h3>
+          <p>A web app that turns images into pixel art or ASCII art in real time, using JavaScript and HTML5 Canvas.</p>
+          <a target="_blank" href="https://netlify.app" rel="noopener">Live site</a>
+        </div>
+      </div>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>School</th>
+            <th>Program</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Scaler School of Technology</td>
+            <td>Computer Science and Engineering</td>
+            <td>Studying</td>
+          </tr>
+          <tr>
+            <td>Velammal Vidhyashram</td>
+            <td>10th and 12th</td>
+            <td>Completed</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="mailto:arjeet.26bcs10140@sst.scaler.com" enctype="text/plain" id="native-contact-form">
+        <label>Name</label>
+        <input name="name" type="text" required>
+        <label>Email</label>
+        <input name="email" type="email" required>
+        <label>Message</label>
+        <textarea rows="4" name="message" required></textarea>
+        <div>
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="v">
+      Arjeet Martha <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
